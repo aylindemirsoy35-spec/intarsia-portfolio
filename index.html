@@ -11,9 +11,10 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        /* Dünkü o şık, gözü yormayan koyu antirasit/füme zemin */
         body {
-            background-color: #f5f0ea;
-            color: #4a3b32;
+            background-color: #1e1e1e;
+            color: #f5f0ea;
             padding: 20px;
         }
         header {
@@ -21,12 +22,12 @@
             padding: 40px 0;
         }
         header h1 {
-            color: #5c4033;
-            font-size: 2.5rem;
+            color: #dfb15b; /* Ahşap tonlarına çok yakışan gold rengi başlık */
+            font-size: 2.6rem;
             margin-bottom: 10px;
         }
         header p {
-            color: #8c7b70;
+            color: #a09085;
             font-size: 1.1rem;
         }
         .container {
@@ -37,30 +38,33 @@
             gap: 30px;
             padding: 20px 0;
         }
+        /* Ürün kartları koyu zeminde lüks dursun diye hafif parlak füme yapıldı */
         .card {
-            background: #fff;
+            background: #2a2a2a;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
             text-align: center;
+            border: 1px solid #333;
         }
+        /* Resimlerin kendi orijinal arka planı ve kare formları tamamen korundu */
         .card img {
             width: 100%;
             height: 350px;
-            object-fit: cover;
+            object-fit: cover; 
         }
         .card-body {
             padding: 20px;
         }
         .card-title {
             font-size: 1.2rem;
-            color: #5c4033;
+            color: #f5f0ea;
             margin-bottom: 10px;
             font-weight: bold;
         }
         .card-price {
             font-size: 1.4rem;
-            color: #b87333;
+            color: #dfb15b;
             font-weight: bold;
         }
     </style>
@@ -69,7 +73,7 @@
 
     <header>
         <h1>Ahşap İntarsiya Koleksiyonu</h1>
-        <p>El emeği, özel tasarım ahşap pano ve figürler</p>
+        <p>Aracısız, El Emeği Özel Tasarım Sanat Eserleri</p>
     </header>
 
     <div class="container">
