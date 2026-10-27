@@ -6,26 +6,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahşap İntarsiya Portfolyo</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #1e1e1e; color: #f5f0ea; padding: 20px; }
-        header { text-align: center; padding: 40px 0; }
-        header h1 { color: #dfb15b; font-size: 2.6rem; margin-bottom: 10px; }
-        header p { color: #a09085; font-size: 1.1rem; }
-        .container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 20px 0; }
-        .card { background: #2a2a2a; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.3); text-align: center; border: 1px solid #333; }
-        .card img { width: 100%; height: 350px; object-fit: cover; }
-        .card-body { padding: 20px; }
-        .card-title { font-size: 1.2rem; color: #f5f0ea; margin-bottom: 10px; font-weight: bold; }
-        .card-price { font-size: 1.4rem; color: #dfb15b; font-weight: bold; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* İstediğin o asil ve koyu antrasit zemin */
+        body {
+            background-color: #1e1e1e;
+            color: #f5f0ea;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        header h1 {
+            color: #dfb15b; /* Ahşaba çok yakışan gold başlık */
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: #a09085;
+            font-size: 1.1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+        /* Koyu zeminde lüks duran hafif parlak füme kartlar */
+        .card {
+            background: #2a2a2a;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            text-align: center;
+            border: 1px solid #333;
+        }
+        /* Resimlerin kendi orijinal arka planı tamamen korunuyor */
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover; 
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            color: #f5f0ea;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .card-price {
+            font-size: 1.4rem;
+            color: #dfb15b;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Ahşap İntarsiya Koleksiyonu</h1>
         <p>Aracısız, El Emeği Özel Tasarım Sanat Eserleri</p>
     </header>
+
     <div class="container">
-        <!-- 14 Ürünlük galeri içeriği ve güncellenmiş görsel bağlantıları bu kod bloğunda yer almaktadır. -->
+        <!-- Ürün 1 -->
+        <div class="card">
+            <img src="5b46786b-bfb3-414b-9e48-7ac8cf0557a2.avif" alt="İNTERSİA ETNİK KADIN PANO">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA ETNİK KADIN PANO</div>
+                <div class="card-price">2.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 2 -->
+        <div class="card">
+            <img src="b22152e6-f1e3-483a-b8b8-3f29c8b6e3ca.avif" alt="İNTERSİA ARI KUŞU">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA ARI KUŞU</div>
+                <div class="card-price">2.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 3 -->
+        <div class="card">
+            <img src="cf12c2c2-31b3-4a47-bdd0-723dcb3ec5ac.avif" alt="İNTERSİA AHŞAP ASLAN PANO">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA AHŞAP ASLAN PANO</div>
+                <div class="card-price">3.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 4 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA CORGİ">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA CORGİ</div>
+                <div class="card-price">5.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 5 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA ÇERÇEVELİ KUŞ PANO">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA ÇERÇEVELİ KUŞ PANO</div>
+                <div class="card-price">4.000 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 6 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA YUNUS PANO">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA YUNUS PANO</div>
+                <div class="card-price">3.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 7 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA AT PANO">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA AT PANO</div>
+                <div class="card-price">2.000 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 8 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA BULLDOG">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA BULLDOG</div>
+                <div class="card-price">3.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 9 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA TUKAN ÇERÇEVELİ">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA TUKAN ÇERÇEVELİ</div>
+                <div class="card-price">6.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 10 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA PETEKLİ ARI">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA PETEKLİ ARI</div>
+                <div class="card-price">4.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 11 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA ÇİTLİ KÖPEK">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA ÇİTLİ KÖPEK</div>
+                <div class="card-price">3.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 12 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA AHŞAP AYICIK PANDA">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA AHŞAP AYICIK PANDA</div>
+                <div class="card-price">2.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 13 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA AHŞAP BALIK">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA AHŞAP BALIK</div>
+                <div class="card-price">2.500 TL</div>
+            </div>
+        </div>
+
+        <!-- Ürün 14 -->
+        <div class="card">
+            <img src="https://zyrosite.com" alt="İNTERSİA AHŞAP SAZAN">
+            <div class="card-body">
+                <div class="card-title">İNTERSİA AHŞAP SAZAN</div>
+                <div class="card-price">2.500 TL</div>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
