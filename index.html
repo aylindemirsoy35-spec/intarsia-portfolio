@@ -3,35 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ürün Sayfası</title>
+    <title>Ürün Kataloğu</title>
     <style>
-        /* Dün hazırladığımız temel ürün kartı stilleri */
-        body { font-family: sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
-        .product-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-        .product-card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 15px; width: 250px; text-align: center; }
-        /* Resimlerin taşmaması ve düzgün yüklenmesi için alan */
-        .product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; background-color: #eee; }
-        .price { color: #2ecc71; font-weight: bold; font-size: 1.2em; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; margin: 0; padding: 40px 20px; color: #333; }
+        h1 { text-align: center; color: #2c3e50; margin-bottom: 40px; }
+        .product-container { display: flex; gap: 25px; justify-content: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
+        .product-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 20px; width: 260px; text-align: center; transition: transform 0.2s; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-card img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; background-color: #f1f2f6; }
+        .product-title { font-size: 1.1em; font-weight: 600; margin: 15px 0 10px 0; color: #2c3e50; text-transform: uppercase; }
+        .price { color: #e74c3c; font-weight: bold; font-size: 1.3em; margin: 10px 0; }
     </style>
 </head>
 <body>
 
-    <h1 style="text-align: center;">Ürünlerimiz</h1>
+    <h1>Ürün Sayfamız</h1>
 
     <div class="product-container">
-        <!-- 1. Ürün Kartı -->
+        <!-- İlk 3 Sorunsuz Açılan Ürünleriniz -->
         <div class="product-card">
-            <!-- GitHub Pages için göreceli (relative) dosya yolu kullandık -->
-            <img src="images/urun1.jpg" alt="Ürün 1">
-            <h3>Akıllı Saat</h3>
-            <p class="price">2.499 TL</p>
+            <img src="images/urun1.avif" alt="Ürün 1">
+            <div class="product-title">Ürün 1</div>
+            <div class="price">1.500 TL</div>
         </div>
 
-        <!-- 2. Ürün Kartı -->
         <div class="product-card">
-            <img src="images/urun2.jpg" alt="Ürün 2">
-            <h3>Kablosuz Kulaklık</h3>
-            <p class="price">1.899 TL</p>
+            <img src="images/urun2.avif" alt="Ürün 2">
+            <div class="product-title">Ürün 2</div>
+            <div class="price">2.200 TL</div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/urun3.avif" alt="Ürün 3">
+            <div class="product-title">Ürün 3</div>
+            <div class="price">3.400 TL</div>
+        </div>
+
+        <!-- 4. Ürün: INTERSIA CORGİ (Sorunlu olan resim burasıydı, dosya adını GitHub kurallarına göre eşitledim) -->
+        <div class="product-card">
+            <!-- GitHub'ın resmini okuyabilmesi için tam dosya adı ve .avif uzantısını yerleştirdim -->
+            <img src="images/intersia-corgi.avif" alt="INTERSIA CORGİ">
+            <div class="product-title">INTERSIA CORGİ</div>
+            <div class="price">5.500 TL</div>
         </div>
     </div>
 
