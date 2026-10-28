@@ -3,70 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahşap İntarsiya Portfolyo</title>
+    <title>Ürün Sayfası</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        body { 
-            background: radial-gradient(circle, #222222 0%, #111111 100%); 
-            color: #f5f0ea; 
-            padding: 20px; 
-            min-height: 100vh;
-        }
-        header { text-align: center; padding: 40px 0; }
-        header h1 { color: #dfb15b; font-size: 2.6rem; margin-bottom: 10px; }
-        header p { color: #a09085; font-size: 1.1rem; }
-        .container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 20px 0; }
-        .card { 
-            background: #2a2a2a; 
-            border-radius: 12px; 
-            overflow: hidden; 
-            box-shadow: 0 8px 25px rgba(0,0,0,0.3); 
-            text-align: center; 
-            border: 1px solid #333; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between;
-        }
-        .card img { width: 100%; height: 350px; object-fit: cover; }
-        .card-body { padding: 20px; margin-top: auto; }
-        .card-title { font-size: 1.2rem; color: #f5f0ea; margin-bottom: 10px; font-weight: bold; }
-        .card-price { font-size: 1.4rem; color: #dfb15b; font-weight: bold; }
+        /* Dün hazırladığımız temel ürün kartı stilleri */
+        body { font-family: sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        .product-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .product-card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 15px; width: 250px; text-align: center; }
+        /* Resimlerin taşmaması ve düzgün yüklenmesi için alan */
+        .product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; background-color: #eee; }
+        .price { color: #2ecc71; font-weight: bold; font-size: 1.2em; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ahşap İntarsiya Koleksiyonu</h1>
-        <p>Aracısız, El Emeği Özel Tasarım Sanat Eserleri</p>
-    </header>
-    <div class="container">
-        <!-- 1 -->
-        <div class="card"><img src="5b46786b-bfb3-414b-9e48-7ac8cf0557a2.avif"><div class="card-body"><div class="card-title">İNTERSİA ETNİK KADIN PANO</div><div class="card-price">2.500 TL</div></div></div>
-        <!-- 2 -->
-        <div class="card"><img src="b22152e6-f1e3-483a-b8b8-3f29c8b6e3ca.avif"><div class="card-body"><div class="card-title">İNTERSİA ARI KUŞU</div><div class="card-price">2.500 TL</div></div></div>
-        <!-- 3 -->
-        <div class="card"><img src="cf12c2c2-31b3-4a47-bdd0-723dcb3ec5ac.avif"><div class="card-body"><div class="card-title">İNTERSİA AHŞAP ASLAN PANO</div><div class="card-price">3.500 TL</div></div></div>
-        <!-- 4 -->
-        <div class="card"><img src="f597cacc-1894-48ab-a9bd-de396812f547.webp"><div class="card-body"><div class="card-title">İNTERSİA CORGİ</div><div class="card-price">5.500 TL</div></div></div>
-        <!-- 5 -->
-        <div class="card"><img src="18ab715b-e0f6-4888-a1b6-7dd3054c0a08.webp"><div class="card-body"><div class="card-title">İNTERSİA ÇERÇEVELİ KUŞ PANO</div><div class="card-price">4.000 TL</div></div></div>
-        <!-- 6 -->
-        <div class="card"><img src="b6b6ebc7-ed55-4a09-967f-3652c353c25d.webp"><div class="card-body"><div class="card-title">İNTERSİA YUNUS PANO</div><div class="card-price">3.500 TL</div></div></div>
-        <!-- 7 -->
-        <div class="card"><img src="2bb3dc0d-f24f-4fab-bfd9-28a1d3ee5260.webp"><div class="card-body"><div class="card-title">İNTERSİA AT PANO</div><div class="card-price">2.000 TL</div></div></div>
-        <!-- 8 -->
-        <div class="card"><img src="30fd6d02-d908-43c9-8505-cfe9f8bba35e.webp"><div class="card-body"><div class="card-title">İNTERSİA BULLDOG</div><div class="card-price">3.500 TL</div></div></div>
-        <!-- 9 -->
-        <div class="card"><img src="3530b5d4-1183-471d-9811-0c5e323877e3.webp"><div class="card-body"><div class="card-title">İNTERSİA TUKAN ÇERÇEVELİ</div><div class="card-price">6.500 TL</div></div></div>
-        <!-- 10 -->
-        <div class="card"><img src="0de12594-8c04-4cbb-836e-bbb782aac811.webp"><div class="card-body"><div class="card-title">İNTERSİA PETEKLİ ARI</div><div class="card-price">4.500 TL</div></div></div>
-        <!-- 11 -->
-        <div class="card"><img src="6bc2af15-92ab-49c8-84cc-66dbada1d753.webp"><div class="card-body"><div class="card-title">İNTERSİA ÇİTLİ KÖPEK</div><div class="card-price">3.500 TL</div></div></div>
-        <!-- 12 -->
-        <div class="card"><img src="9a5dd6ad-b650-4968-87f6-ae461f6923c2.webp"><div class="card-body"><div class="card-title">İNTERSİA AHŞAP AYICIK PANDA</div><div class="card-price">2.500 TL</div></div></div>
-        <!-- 13 -->
-        <div class="card"><img src="eb3d7088-ddcf-4b52-8c4c-42ac05ec0f17.jpeg"><div class="card-body"><div class="card-title">İNTERSİA AHŞAP BALIK</div><div class="card-price">2.500 TL</div></div></div>
-        <!-- 14 -->
-        <div class="card"><img src="50989e8a-ec64-49bf-9fc3-6bee4f7e4848.jpeg"><div class="card-body"><div class="card-title">İNTERSİA AHŞAP SAZAN</div><div class="card-price">2.500 TL</div></div></div>
+
+    <h1 style="text-align: center;">Ürünlerimiz</h1>
+
+    <div class="product-container">
+        <!-- 1. Ürün Kartı -->
+        <div class="product-card">
+            <!-- GitHub Pages için göreceli (relative) dosya yolu kullandık -->
+            <img src="images/urun1.jpg" alt="Ürün 1">
+            <h3>Akıllı Saat</h3>
+            <p class="price">2.499 TL</p>
+        </div>
+
+        <!-- 2. Ürün Kartı -->
+        <div class="product-card">
+            <img src="images/urun2.jpg" alt="Ürün 2">
+            <h3>Kablosuz Kulaklık</h3>
+            <p class="price">1.899 TL</p>
+        </div>
     </div>
+
 </body>
 </html>
